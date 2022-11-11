@@ -301,17 +301,7 @@ a.link {
 /* Buttons of all type */
 /*  */
 /* List settings */
-.navigation__list,
-.contacts__list,
-.secound-list,
-.team-list,
-.description-list,
-.address__list,
-.project__list,
-.menu__list,
-.media__list,
-.team-media-list,
-.clients-list {
+.list {
   list-style: none;
 }
 .secound-list {
