@@ -64,16 +64,20 @@
     </header>
     <main class="main">
       <div class="introduction">
-        <div class="container introduction-box">
-          <h1 class="introduction-header">
+        <div class="container">
+          <h1 class="introduction__header">
             Efektywne rozwiązania dla Waszego biznesu
           </h1>
-          <button class="introduction-button" type="button" data-modal-open>
+          <button
+            class="button introduction__button"
+            type="button"
+            data-modal-open
+          >
             Zamów usługę
           </button>
         </div>
       </div>
-      <section class="description section">
+      <section class="section description">
         <div class="container">
           <ul class="description-list">
             <li>
@@ -128,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <section class="secound-section section">
+      <section class="section">
         <div class="container">
           <h2 class="secound-header">Czym się zajmujemy</h2>
           <ul class="secound-list">
@@ -478,9 +482,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-box">
+        <div class="footer__wrapper">
           <div class="footer-left">
-            <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+            <a class="logo" href="./index.html"
+              ><span class="logo__highlight">Web</span>Studio</a
+            >
             <address class="address">
               <ul class="address-list">
                 <li>m. Warszawa, Aleje Jerozolimskie 21</li>
@@ -559,7 +565,7 @@
                   required
                 />
               </fieldset>
-              <button class="footer-form-button" type="submit">
+              <button class="button footer-form-button" type="submit">
                 Zapisz się<svg class="footer-form-icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
@@ -647,7 +653,7 @@
             <a class="policy-link" href="./index.html">Regulamin</a> i
             <a class="policy-link" href="./index.html">Politykę Prywatności</a
             >. </label
-          ><button class="sign-up-button" type="submit">Wyślij</button>
+          ><button class="button sign-up-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
