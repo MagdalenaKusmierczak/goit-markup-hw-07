@@ -11,7 +11,7 @@
   --background-blueish: #2f303a;
 }
 
-body {
+.body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -56,7 +56,7 @@ ul {
   border-bottom: 1px solid var(--creme-white);
   position: relative;
 }
-.header-box {
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,22 +66,22 @@ ul {
   display: flex;
   flex-grow: 2;
 }
-.navigation-list {
+.navigation__list {
   display: flex;
   padding-left: 93px;
   gap: 46px;
 }
-.header-contacts {
+.contacts {
   display: flex;
   justify-self: flex-end;
   align-items: center;
 }
-.header-contacts-list {
+.contacts__list {
   display: flex;
   gap: 50px;
   padding-right: 2px;
 }
-.header-contacts-list-link {
+.contacts__link {
   display: flex;
   align-items: center;
 }
@@ -188,7 +188,7 @@ ul {
 .header-portfolio .logo {
   color: #000;
 }
-.logo span {
+.logo__highlight {
   color: var(--brand-color);
 }
 .footer .logo {
@@ -211,10 +211,10 @@ a.link {
 .link:focus {
   color: var(--brand-color);
 }
-.current-page {
+.navigation__highlight {
   color: var(--brand-color);
 }
-.header-portfolio .current-page::after {
+.header-portfolio .navigation__highlight::after {
   content: '';
   display: block;
   background-color: var(--brand-color);
@@ -225,7 +225,7 @@ a.link {
   position: absolute;
   bottom: -1px;
 }
-.header .current-page::after {
+.header .navigation__highlight::after {
   content: '';
   display: block;
   background-color: var(--brand-color);
@@ -240,17 +240,17 @@ a.link {
 .link:visited {
   color: initial;
 }
-.navigation-list-link {
+.navigation__link {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.navigation-list-link:hover,
-.navigation-list-link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--brand-color);
 }
-.header-contacts a {
+.contacts a {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--grey-tone);
@@ -306,8 +306,8 @@ a.link {
 /* Buttons of all type */
 /*  */
 /* List settings */
-.navigation-list,
-.header-contacts-list,
+.navigation__list,
+.contacts__list,
 .secound-list,
 .team-list,
 .description-list,
@@ -446,18 +446,18 @@ a.link {
 
 /* Description settings */
 /* SVG-icons */
-.contact-icon-phone {
+.contacts__icon {
   display: inline-block;
+  height: 16px;
+}
+.contact__icon-phone {
   width: 30px;
-  height: 16px;
 }
-.contact-icon-mail {
-  display: inline-block;
+.contact__icon-mail {
   width: 36px;
-  height: 16px;
 }
-.contact-element:hover,
-.contact-element:focus {
+.contacts__element:hover,
+.contacts__element:focus {
   --color4: var(--brand-color);
 }
 .footer-media-icon {
