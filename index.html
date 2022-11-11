@@ -483,81 +483,86 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer-left">
+          <div class="footer__contacts">
             <a class="logo" href="./index.html"
               ><span class="logo__highlight">Web</span>Studio</a
             >
             <address class="address">
-              <ul class="address-list">
-                <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-                <li>
-                  <a class="footer-link link" href="mailto:info@example.com"
+              <ul class="address__list">
+                <li class="address__element">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li class="address__element">
+                  <a class="link address-link" href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
-                <li>
-                  <a class="footer-link link" href="tel:+48111111111"
+                <li class="address__element">
+                  <a class="link address-link" href="tel:+48111111111"
                     >+48 111 111 111</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-media">
-            <h3 class="footer-media-header">Dołącz do nas</h3>
-
-            <ul class="footer-media-list">
-              <li>
+          <div class="media">
+            <h3 class="media__header">Dołącz do nas</h3>
+            <ul class="media__list">
+              <li class="media__element">
                 <a
+                  class="media__link"
                   href="https://www.instagram.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <svg class="footer-media-icon">
+                  <svg class="media__icon">
                     <use href="./images/icons.svg#icon-instagram"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="media__element">
                 <a
+                  class="media__link"
                   href="https://www.twitter.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <svg class="footer-media-icon">
+                  <svg class="media__icon">
                     <use href="./images/icons.svg#icon-twitter"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="media__element">
                 <a
+                  class="media__link"
                   href="https://www.facebook.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <svg class="footer-media-icon">
+                  <svg class="media__icon">
                     <use href="./images/icons.svg#icon-facebook"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="media__element">
                 <a
+                  class="media__link"
                   href="https://www.linkedin.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <svg class="footer-media-icon">
+                  <svg class="media__icon">
                     <use href="./images/icons.svg#icon-linkedin"></use></svg
                 ></a>
               </li>
             </ul>
           </div>
-          <div class="footer-sub">
-            <form class="footer-form" name="signup-footer-form">
-              <fieldset class="footer-form-fieldset">
-                <label class="footer-form-label" for="sub-email"
+          <div class="subscription">
+            <form class="subscription__form" name="signup-subscription-form">
+              <fieldset class="subscription__fieldset">
+                <label class="subscription__label" for="sub-email"
                   >Zapisz się do newslettera</label
                 >
 
                 <input
-                  class="footer-form-input"
+                  class="subscription__input"
                   type="email"
                   name="subscribtion-email"
                   id="sub-email"
@@ -565,8 +570,8 @@
                   required
                 />
               </fieldset>
-              <button class="button footer-form-button" type="submit">
-                Zapisz się<svg class="footer-form-icon">
+              <button class="button subscription__button" type="submit">
+                Zapisz się<svg class="subscription__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -575,6 +580,7 @@
         </div>
       </div>
     </footer>
+    >
     <div class="modal is-hidden" data-modal>
       <div class="modal-box">
         <button class="btn-modal" type="button" data-modal-close>

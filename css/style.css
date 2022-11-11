@@ -43,14 +43,13 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.buttons-portfolio {
+.menu {
   padding-bottom: 0px;
 }
-.projects {
+.project {
   padding-top: 50px;
 }
-.header,
-.header-portfolio {
+.header {
   padding: 23.94px;
   background-color: var(--pure-white);
   border-bottom: 1px solid var(--creme-white);
@@ -131,34 +130,34 @@ ul {
   width: 100%;
   margin: 0 0;
 }
-.project-list {
+.project__list {
   flex-basis: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
 }
-.project-description {
+.project__description {
   max-width: 370px;
   background-color: var(--pure-white);
   overflow: hidden;
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-description:hover,
-.project-description:focus {
+.project__description:hover,
+.project__description:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project-figure {
+.project__figure {
   margin: 0 0;
   display: block;
 }
-.project-figure-caption {
+.project__caption {
   border: 1px solid #eee;
   border-top: none;
 }
-.project-figure img {
+.project__picture {
   display: block;
   width: 100%;
 }
@@ -184,8 +183,7 @@ ul {
   text-decoration: none;
   cursor: pointer;
 }
-.header .logo,
-.header-portfolio .logo {
+.header .logo {
   color: #000;
 }
 .logo__highlight {
@@ -214,7 +212,7 @@ a.link {
 .navigation__highlight {
   color: var(--brand-color);
 }
-.header-portfolio .navigation__highlight::after {
+.header__portfolio .navigation__highlight::after {
   content: '';
   display: block;
   background-color: var(--brand-color);
@@ -255,7 +253,7 @@ a.link {
   letter-spacing: 0.02em;
   color: var(--grey-tone);
 }
-.address-list a {
+.address__list a {
   color: var(--grey-shadow);
 }
 
@@ -282,7 +280,7 @@ a.link {
   color: var(--pure-white);
   background-color: var(--brand-color);
 }
-.portfolio-button {
+.menu__button {
   background-color: var(--secound-white);
   font-weight: 500;
   line-height: 1.62;
@@ -293,8 +291,8 @@ a.link {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.menu__button:hover,
+.menu__button:focus {
   background: var(--brand-color);
   color: var(--pure-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -308,10 +306,10 @@ a.link {
 .secound-list,
 .team-list,
 .description-list,
-.address-list,
-.project-list,
-.buttons-portfolio-list,
-.footer-media-list,
+.address__list,
+.project__list,
+.menu__list,
+.media__list,
 .team-media-list,
 .clients-list {
   list-style: none;
@@ -331,7 +329,7 @@ a.link {
   letter-spacing: 0.03em;
   color: var(--grey-tone);
 }
-.address-list {
+.address__list {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -344,12 +342,12 @@ a.link {
   display: flex;
   gap: 30px;
 }
-.buttons-portfolio-list {
+.menu__list {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
-.footer-media-list,
+.media__list,
 .team-media-list {
   display: flex;
   gap: 10px;
@@ -393,7 +391,7 @@ a.link {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-media-header {
+.media__header {
   font-size: inherit;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -423,7 +421,7 @@ a.link {
   text-align: center;
   color: var(--grey-tone);
 }
-.project-name {
+.project__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -432,7 +430,7 @@ a.link {
   padding-top: 20px;
   padding-bottom: 4px;
 }
-.project-type {
+.project__type {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -457,7 +455,7 @@ a.link {
 .contacts__element:focus {
   --color4: var(--brand-color);
 }
-.footer-media-icon {
+.media__icon {
   width: 44px;
   height: 44px;
   fill: var(--pure-white);
@@ -466,8 +464,8 @@ a.link {
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-media-icon:hover,
-.footer-media-icon:focus {
+.media__icon:hover,
+.media__icon:focus {
   background-color: var(--brand-color);
 }
 .team-media-icon {
@@ -512,18 +510,18 @@ a.link {
 }
 /* SVG-icons */
 /* overlay */
-.overlay-portfolio-paragraph {
+.project__paragraph {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--pure-white);
   padding: 49px 5px 49px 24px;
 }
-.project-image-box {
+.project__wrapper {
   position: relative;
   overflow: hidden;
 }
-.overlay-portfolio {
+.project__overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -534,7 +532,7 @@ a.link {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-description:hover .overlay-portfolio {
+.project__description:hover .project__overlay {
   transform: translateY(-100%);
 }
 .secound-list-element {
@@ -759,7 +757,7 @@ a.link {
 }
 /* Form */
 /* footer form */
-.footer-form-button {
+.subscription__button {
   width: 200px;
   height: 50px;
   background: var(--brand-color);
@@ -771,14 +769,14 @@ a.link {
   text-align: left;
   padding-left: 42px;
 }
-.footer-form-icon {
+.subscription__icon {
   fill: var(--pure-white);
   width: 24px;
   height: 24px;
   position: absolute;
   right: 28px;
 }
-.footer-form-input {
+.subscription__input {
   background-color: var(--background-blueish);
   border: none;
   outline: none;
@@ -786,22 +784,22 @@ a.link {
   width: 100%;
   height: 100%;
 }
-.footer-form-input::placeholder {
+.subscription__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--grey-shadow);
 }
-.footer-form {
+.subscription__form {
   display: flex;
   flex-wrap: nowrap;
   gap: 12px;
 }
-.footer-sub {
+.subscription {
   padding-top: 48px;
 }
 
-.footer-form-fieldset {
+.subscription__fieldset {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -809,7 +807,7 @@ a.link {
   position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.footer-form-label {
+.subscription__label {
   font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
