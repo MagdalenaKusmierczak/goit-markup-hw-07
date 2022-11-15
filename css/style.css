@@ -338,7 +338,7 @@
   gap: 10px;
   flex-wrap: nowrap;
 }
-.media__list--team {
+.team__list {
   justify-content: center;
   padding-bottom: 30px;
 }
@@ -368,11 +368,6 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-}
-.team-header {
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .media__heading {
   font-size: inherit;
@@ -445,19 +440,19 @@
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.media__icon--footer {
+.media__footer {
   fill: var(--pure-white);
   background-color: var(--grey-circle);
 }
-.media__icon--footer:hover,
-.media__icon--footer:focus {
+.media__footer:hover,
+.media__footer:focus {
   background-color: var(--brand-color);
 }
-.media__icon--team {
+.media__team {
   fill: var(--grey-icons);
 }
-.media__icon--team:hover,
-.media__icon--team:focus {
+.media__team:hover,
+.media__team:focus {
   fill: var(--pure-white);
   background-color: var(--brand-color);
 }
@@ -579,7 +574,7 @@
   background-color: var(--pure-white);
   cursor: pointer;
 }
-.modal__icon {
+.modal__x {
   fill: #000;
   width: 11px;
   height: 11px;
@@ -659,7 +654,7 @@
 .modal__link {
   color: var(--brand-color);
 }
-.sign-up-form-icon {
+.modal__icon {
   width: 18px;
   height: 18px;
   display: flex;
@@ -687,7 +682,7 @@
   fill: var(--brand-color);
 }
 
-.policy-checkbox-label {
+.modal__checkbox {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: 77px;
@@ -698,12 +693,12 @@
   color: var(--grey-tone);
   position: relative;
 }
-.hidden-input {
+.checkbox__input--hidden {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
-.build-in-checkbox {
+.checkbox__input {
   display: block;
   position: absolute;
   cursor: pointer;
@@ -714,7 +709,7 @@
   border: 2px #212121 solid;
   border-radius: 2px;
 }
-.custom-mark {
+.checkbox__mark {
   position: absolute;
   display: block;
   width: 16px;
@@ -725,14 +720,14 @@
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checked-mark {
+.checkbox__check {
   width: 13px;
   height: 10px;
   position: absolute;
   top: 3px;
   left: 1px;
 }
-.policy-checkbox-label input:checked ~ .custom-mark {
+.checkbox .checkbox__input:checked ~ .checkbox__mark {
   background-color: var(--brand-color);
 }
 /* Form */
