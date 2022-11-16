@@ -1,0 +1,12 @@
+.address__list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--pure-white);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.address__link {
+  color: var(--grey-shadow);
+}
