@@ -215,7 +215,7 @@
 .contacts__icon-mail {
   width: 36px;
 }
-.contacts__element:hover, .contacts__element:focus {
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
   fill: #2196f3;
 }
 

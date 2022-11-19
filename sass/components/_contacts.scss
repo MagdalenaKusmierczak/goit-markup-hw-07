@@ -28,8 +28,8 @@
   &__icon-mail {
     width: 36px;
   }
-  &__element:hover,
-  &__element:focus {
+  &__link:hover &__icon,
+  &__link:focus &__icon {
     fill: $brand-color;
   }
 }
