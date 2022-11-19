@@ -1,26 +1,37 @@
-.clients__element {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  transition: fill 250ms, border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__list {
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.clients__logo {
-  width: 100%;
-  height: 100%;
-  fill: var(--grey-icons);
-  transition: fill 250ms, border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__logo:hover,
-.client__logo:focus,
-.clients__element:hover,
-.clients__element:focus {
-  fill: var(--brand-color);
-  border-color: var(--brand-color);
+.clients {
+  &__element {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: fill 250ms, border-color 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  &__logo {
+    width: 100%;
+    height: 100%;
+    fill: $grey-icons;
+    transition: fill 250ms, border-color 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__logo:hover {
+    fill: $brand-color;
+    border-color: $brand-color;
+  }
+  &__logo:focus {
+    fill: $brand-color;
+    border-color: $brand-color;
+  }
+  &__element:hover {
+    fill: $brand-color;
+    border-color: $brand-color;
+  }
+  &__element:focus {
+    fill: $brand-color;
+    border-color: $brand-color;
+  }
 }

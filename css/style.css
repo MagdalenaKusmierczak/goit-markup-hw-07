@@ -249,9 +249,7 @@
   letter-spacing: 0.02em;
 }
 .navigation__link:hover,
-.navigation__link:focus,
-.footer-link:hover,
-.footer-link:focus {
+.navigation__link:focus {
   color: var(--brand-color);
 }
 .contacts__link {

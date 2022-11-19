@@ -1,5 +1,5 @@
 .introduction {
-  background-color: var(--background-blueish);
+  background-color: $background-blueish;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -11,26 +11,27 @@
   height: 100%;
   background-position: center;
   padding: 200px;
-}
-.introduction__heading {
-  margin: 0 auto;
-  max-width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--pure-white);
-  padding-bottom: 30px;
-}
-.introduction__button {
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--pure-white);
-  background-color: var(--brand-color);
+
+  &__heading {
+    margin: 0 auto;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $pure-white;
+    padding-bottom: 30px;
+  }
+  &__button {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $pure-white;
+    background-color: $brand-color;
+  }
 }

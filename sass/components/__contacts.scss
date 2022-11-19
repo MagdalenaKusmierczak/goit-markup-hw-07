@@ -2,32 +2,35 @@
   display: flex;
   justify-self: flex-end;
   align-items: center;
-}
-.contacts__list {
-  display: flex;
-  gap: 50px;
-  padding-right: 2px;
-}
-.contacts__link {
-  display: flex;
-  align-items: center;
-}
-.contacts__link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--grey-tone);
-}
-.contacts__icon {
-  display: inline-block;
-  height: 16px;
-}
-.contacts__icon-phone {
-  width: 30px;
-}
-.contacst__icon-mail {
-  width: 36px;
-}
-.contacts__element:hover,
-.contacts__element:focus {
-  --color4: var(--brand-color);
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    padding-right: 2px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $grey-tone;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 16px;
+  }
+  &__icon-phone {
+    width: 30px;
+  }
+  &__icon-mail {
+    width: 36px;
+  }
+  &__element:hover {
+    --color4: $brand-color;
+  }
+  &__element:focus {
+    --color4: $brand-color;
+  }
 }

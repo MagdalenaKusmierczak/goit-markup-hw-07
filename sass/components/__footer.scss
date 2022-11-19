@@ -1,17 +1,13 @@
 .footer {
-  background-color: var(--background-blueish);
+  background-color: $background-blueish;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer__wrapper {
-  display: flex;
-  gap: 70px;
-}
-.footer .logo {
-  color: var(--pure-white);
-  padding-bottom: 20px;
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--brand-color);
+  &__wrapper {
+    display: flex;
+    gap: 70px;
+  }
+  & .logo {
+    color: $pure-white;
+    padding-bottom: 20px;
+  }
 }

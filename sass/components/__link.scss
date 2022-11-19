@@ -2,13 +2,17 @@
   text-decoration: none;
   color: inherit;
   transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link:hover,
-.link:focus {
-  color: var(--brand-color);
-}
-.link:active,
-.link:visited {
-  color: initial;
+  transition-timing-function: $main-transition-cubic;
+  &:hover {
+    color: $brand-color;
+  }
+  &:focus {
+    color: $brand-color;
+  }
+  &:active {
+    color: initial;
+  }
+  &:visited {
+    color: initial;
+  }
 }

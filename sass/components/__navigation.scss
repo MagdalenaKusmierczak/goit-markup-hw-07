@@ -1,20 +1,23 @@
 .navigation {
   display: flex;
   flex-grow: 2;
-}
-.navigation__list {
-  display: flex;
-  padding-left: 93px;
-  gap: 46px;
-}
-.navigation__highlight {
-  color: var(--brand-color);
-}
-.navigation__link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--brand-color);
+
+  &__list {
+    display: flex;
+    padding-left: 93px;
+    gap: 46px;
+  }
+  &__highlight {
+    color: $brand-color;
+  }
+  &__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  &__link:hover {
+    color: $brand-color;
+  }
+  &__link:focus {
+    color: $brand-color;
+  }
 }
