@@ -36,5 +36,5 @@
 }
 
 .checkbox .checkbox__input:checked ~ .checkbox__mark {
-  background-color: var(--brand-color);
+  background-color: $brand-color;
 }

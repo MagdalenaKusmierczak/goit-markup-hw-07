@@ -125,7 +125,7 @@
 }
 
 .checkbox .checkbox__input:checked ~ .checkbox__mark {
-  background-color: var(--brand-color);
+  background-color: #2196f3;
 }
 
 .header {
@@ -207,6 +207,7 @@
 .contacts__icon {
   display: inline-block;
   height: 16px;
+  fill: #757575;
 }
 .contacts__icon-phone {
   width: 30px;
@@ -215,7 +216,7 @@
   width: 36px;
 }
 .contacts__element:hover, .contacts__element:focus {
-  --color4: $brand-color;
+  fill: #2196f3;
 }
 
 .main {

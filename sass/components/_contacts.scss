@@ -20,6 +20,7 @@
   &__icon {
     display: inline-block;
     height: 16px;
+    fill: $grey-tone;
   }
   &__icon-phone {
     width: 30px;
@@ -29,6 +30,6 @@
   }
   &__element:hover,
   &__element:focus {
-    --color4: $brand-color;
+    fill: $brand-color;
   }
 }

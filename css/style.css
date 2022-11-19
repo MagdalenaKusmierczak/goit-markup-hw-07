@@ -427,6 +427,7 @@
 .contacts__icon {
   display: inline-block;
   height: 16px;
+  fill: var(--grey-tone);
 }
 .contacts__icon-phone {
   width: 30px;
@@ -436,7 +437,7 @@
 }
 .contacts__element:hover,
 .contacts__element:focus {
-  --color4: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 .media__icon {
