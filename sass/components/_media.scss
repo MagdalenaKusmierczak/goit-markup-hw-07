@@ -25,19 +25,14 @@
     fill: $pure-white;
     background-color: $grey-circle;
   }
-  &__footer:hover {
-    background-color: $brand-color;
-  }
+  &__footer:hover,
   &__footer:focus {
     background-color: $brand-color;
   }
   &__team {
     fill: $grey-icons;
   }
-  &__team:hover {
-    fill: $pure-white;
-    background-color: $brand-color;
-  }
+  &__team:hover,
   &__team:focus {
     fill: $pure-white;
     background-color: $brand-color;

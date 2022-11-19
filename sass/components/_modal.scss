@@ -131,18 +131,9 @@
     padding: 0;
   }
 
-  &__fieldset:focus-within {
-    border-color: $brand-color;
-    fill: $brand-color;
-  }
-  &__comment:focus-within {
-    border-color: $brand-color;
-    fill: $brand-color;
-  }
-  &__fieldset:hover {
-    border-color: $brand-color;
-    fill: $brand-color;
-  }
+  &__fieldset:focus-within,
+  &__comment:focus-within,
+  &__fieldset:hover,
   &__comment:hover {
     border-color: $brand-color;
     fill: $brand-color;

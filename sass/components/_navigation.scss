@@ -14,9 +14,7 @@
     font-weight: 500;
     letter-spacing: 0.02em;
   }
-  &__link:hover {
-    color: $brand-color;
-  }
+  &__link:hover,
   &__link:focus {
     color: $brand-color;
   }

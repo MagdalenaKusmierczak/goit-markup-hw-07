@@ -18,18 +18,9 @@
     transition: fill 250ms, border-color 250ms;
     transition-timing-function: $main-transition-cubic;
   }
-  &__logo:hover {
-    fill: $brand-color;
-    border-color: $brand-color;
-  }
-  &__logo:focus {
-    fill: $brand-color;
-    border-color: $brand-color;
-  }
-  &__element:hover {
-    fill: $brand-color;
-    border-color: $brand-color;
-  }
+  &__logo:hover,
+  &__logo:focus,
+  &__element:hover,
   &__element:focus {
     fill: $brand-color;
     border-color: $brand-color;

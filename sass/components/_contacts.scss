@@ -27,9 +27,7 @@
   &__icon-mail {
     width: 36px;
   }
-  &__element:hover {
-    --color4: $brand-color;
-  }
+  &__element:hover,
   &__element:focus {
     --color4: $brand-color;
   }

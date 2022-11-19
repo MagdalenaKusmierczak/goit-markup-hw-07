@@ -3,15 +3,11 @@
   color: inherit;
   transition: color 250ms;
   transition-timing-function: $main-transition-cubic;
-  &:hover {
-    color: $brand-color;
-  }
+  &:hover,
   &:focus {
     color: $brand-color;
   }
-  &:active {
-    color: initial;
-  }
+  &:active,
   &:visited {
     color: initial;
   }
